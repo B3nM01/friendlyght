@@ -1,0 +1,10 @@
+{
+    "subscriptions":[
+     "sendpay_success",
+     "channel_opened",
+     "channel_open_failed",
+     "sendpay_failure",
+     "invoice_payment"
+    ]
+
+}
