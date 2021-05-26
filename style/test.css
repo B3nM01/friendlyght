@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+  }
+button:hover{
+    background-color:rgb(223, 248, 0) ;
+    border-style: solid;
+    border-color: black;
+    color: black;
+    transition: all 0.5s ease;
+  }
+button{
+  margin-top: 20px;
+width: 182px;
+background-color: rgb(0, 0, 0);
+color: white;
+}
+input{
+  border-radius: 5px;
+  border-style: hidden;
+  transition: all 0.5s ease;
+}
+#loginPassword{
+  background-color: darkslategray;
+}
+#loginPassword:hover{
+  background-color: white;
+  transition: all 0.5s ease;
+  border-style: solid;
+  border-color: rgb(223, 248, 0);
+}
+#loginPassword:focus{
+  background-color: white;
+  border-style: solid;
+  border-color: rgb(223, 248, 0);
+}
+  html, body {
+    height: 100%;
+  }
+  .linescontainer{
+    position: relative;
+    height: 1000px;
+    width: 1850px;
+  }
+  body {
+    display: table;
+    width: 1745px;
+    height: 100%;
+    background-color: #171717;
+    color: #000;
+    line-height: 1.6;
+    position: relative;
+    font-family: sans-serif;
+    overflow: hidden;
+  }
+  /*.lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1000px;
+    margin: auto;
+    width: 1584px;
+  }*/
+  .lines{
+    position: absolute;
+top: 0;
+left: 0;
+right: 0;
+height: 100%;
+margin: auto;
+width: 84%;
+  }
+  
+  .line {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 20%;
+    background: rgba(255, 255, 255, 0.062);
+    overflow: hidden;
+  }
+  .line::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 15vh;
+    width: 100%;
+    top: -50%;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,rgb(200, 255, 0) 50%, rgb(12, 8, 252) 75%, rgb(200, 7,255) 100%);
+    -webkit-animation: drop 7s 0s infinite;
+            animation: drop 7s 0s infinite;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+            animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+  }
+  .line:nth-child(1) {
+    margin-left: 18.5%;
+    -webkit-transform: rotate(30deg);
+    height: 520px;
+    top: 3%;
+}
+  .line:nth-child(1)::after {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+  }
+  .line:nth-child(2) {
+    margin-left: 27%;
+    top: 51.6%;
+    height: 328px;
+  }
+  .line:nth-child(2)::after {
+    -webkit-animation-delay: 4s;
+            animation-delay: 4s;
+  }
+  .line:nth-child(3) {
+    margin-left: 27%;
+
+    height: 328px;
+    top: 6.5%;
+  }
+  .line:nth-child(3)::after {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+  }
+  .line:nth-child(4) {
+    margin-left: 18.5%;
+ 
+    -webkit-transform: rotate(270deg);
+    height: 263px;
+    top: 38.4%;
+  }
+  .line:nth-child(4)::after {
+    -webkit-animation-delay: 2.5s;
+            animation-delay: 2.5s;
+  }
+  .line:nth-child(5) {
+    margin-left: 35.4%;
+    -webkit-transform: rotate(30deg);
+    height: 520px;
+    top: 35.8%;
+  }
+  .line:nth-child(5)::after {
+    -webkit-animation-delay: 4s;
+            animation-delay: 4s;
+  }
+  .line:nth-child(6) {
+    margin-left: 35.5%;
+    -webkit-transform: rotate(270deg);
+    margin-bottom: 59%;
+    top: 26%;
+    height: 263px;
+  }
+  .line:nth-child(6)::after {
+    -webkit-animation-delay: 2.5s;
+            animation-delay: 2.5s;
+  }
+  .reverseline {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 20%;
+    background: rgba(255, 255, 255, 0.055);
+    overflow: hidden;
+  }
+  .reverseline::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 15vh;
+    width: 100%;
+    top: -50%;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,rgb(12, 8, 252) 50%, rgb(200, 255, 0) 75%, rgb(200, 255, 0) 100%);
+    -webkit-animation: drop 7s 0s infinite;
+            animation: drop 7s 0s infinite;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+            animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+  }
+ #rev1 {
+  margin-left: 18.5%;
+  -webkit-transform: rotate(210deg);
+  height: 520px;
+  top: 3%;
+}
+}
+#rev1::after {
+    -webkit-animation-delay: 4s;
+            animation-delay: 4s;
+  }
+#rev2 {
+    -webkit-transform: rotate(180deg);
+    margin-left: 27%;
+    top: 51.6%;
+    height: 328px;
+  }
+#rev2::after {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+  }
+#rev3{    
+
+    -webkit-transform: rotate(180deg);
+    margin-left: 27%;
+
+    height: 328px;
+    top: 6.5%;
+}
+#rev3::after {
+    -webkit-animation-delay: 4s;
+            animation-delay: 4s;
+  }
+#rev4 {
+  margin-left: 18.5%;
+ 
+  -webkit-transform: rotate(90deg);
+  height: 263px;
+  top: 38.4%;
+  }
+#rev4::after {
+    -webkit-animation-delay: 2.5s;
+            animation-delay: 2.5s;
+  }
+#rev5 {
+  margin-left: 35.4%;
+  -webkit-transform: rotate(210deg);
+  height: 520px;
+  top: 35.8%;
+  }
+#rev5::after {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+  }
+#rev6 {
+  margin-left: 35.5%;
+  -webkit-transform: rotate(90deg);
+  margin-bottom: 59%;
+  top: 26%;
+  height: 263px;
+  }
+#rev6::after {
+    -webkit-animation-delay: 2.5s;
+            animation-delay: 2.5s;
+  }
+
+  @-webkit-keyframes drop {
+    0% {
+      top: -50%;
+    }
+    100% {
+      top: 110%;
+    }
+  }
+  
+  @keyframes drop {
+    0% {
+      top: -50%;
+    }
+    100% {
+      top: 110%;
+    }
+  }
+
+
+
+#loginPage{
+    height: min-content;
+width: min-content;
+position: absolute;
+margin-left: 42.5%;
+margin-top: 17%;
+color: white;
+text-align: center;
+}

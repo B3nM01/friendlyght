@@ -1,0 +1,365 @@
+*{box-sizing: border-box; margin: 0px; padding: 0px}
+*{font-family: Victor Mono, monospace;}
+a{
+    color: #d0a65a;
+}
+.header {
+
+ line-height: 80px;
+height: 80px;
+
+}
+.toShow{
+    transition: display 5s;
+}
+.header ul {
+display: flex;
+margin-left: 10px;
+list-style: none;
+}
+.header li{
+width: auto;
+text-align: bottom;
+}
+.header p {
+line-height: 12;
+font-size: 8px;
+}
+.header {
+color: white;
+background-color: #363739;
+}
+.header img{
+    max-width: 40%;
+margin-top: 15px;
+margin-left: 43px;
+}
+#notification p{
+    padding:5px;
+    background-color: red;
+    position: absolute;
+    margin-left: 32px;
+    line-height: 18px;
+    margin-top: 37px;
+    width: 25px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 90%;
+}
+#notUl{
+    display: block;
+    position: absolute;
+    width: 800px;
+    margin-left: -697px;
+    margin-top: 80px;
+    z-index: 5;
+    max-height: 435px;
+    overflow: auto;
+}
+#notUl li{
+    background-color: white;
+    color: black;
+    
+padding: 10px;
+line-height: 39px;
+
+border-bottom-style: solid;
+border-bottom-color: whitesmoke;
+}
+body {
+background-color:  #333;
+width:1745px;
+}
+main{
+
+    display: grid; 
+    grid-template-columns: 10%  40% 40% 10%;
+}
+
+#left{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    position:fixed;
+}
+#right{
+    display:grid;
+    grid-column-start: 4;
+    position: fixed;
+}
+#channelCont{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+#nodeCont{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.principalContainer:hover{
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+ transition: all 0.2s ease;
+}
+#outcomes{
+    grid-column-start: 2;
+    grid-column-end: 3;;
+}
+#incomes{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+#payCont{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.bigInput{
+    width: 100%;
+}
+
+.principalContainer{
+    color: white;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+ input{
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+ }
+button{
+    
+    background-color: #363739;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-color: #363739;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    margin-top: auto;
+    margin-bottom: 0%;
+    transition: all 0.3s ease;
+    
+}
+button:hover{
+    background-color: #d0a65a;
+    border-style: solid;
+    border-color: black;
+    transition: all 0.3s ease;
+    color: initial;
+}
+.details{
+    padding: 5px;
+    background-color: white;
+    transition: all 0.5s;
+}
+.detP{
+    border-bottom-style: solid;
+    border-bottom-color: #d0a65a;
+}
+.flexInput{
+    display: flex;
+}
+
+.detailsList{
+    position: relative;
+    list-style: none;
+    background-color: white;
+    height: 600px;
+    overflow: auto;
+}
+.detailsList li{
+    border-bottom-color: whitesmoke ;
+    border-bottom-style: solid;
+}
+.detailsList button{
+    width: 100%;
+}
+.detailsList div{
+    display: flex;
+    color: black;
+    width: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 2%;
+    padding-bottom:2%;
+
+}
+.detailsList img{
+    max-width: 160px;
+    height: auto;
+    margin-top: -7px;
+
+}
+.detailsList .unstyledP{
+    position: relative;
+height: min-content;
+}
+.detailsList p{
+    position: absolute;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 70%;
+    padding:3px;
+}
+.detailsList .unstyledDiv{
+    all: initial;
+}
+.rightPos{
+    right:1%;
+    position: absolute;
+}
+.detailsList .noStyleP{
+    all: revert;
+    width: 100%;
+    text-align: center;
+
+}
+
+.title{
+    width: 100%;
+    background-color: #363739;
+    font-size: 120%;
+    text-align: center;
+    padding:8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #ffa400;
+}
+
+.sliderRight{
+    height: 17px;
+width: 17px;
+background:  rgb(238, 102, 102);
+border-radius: 8px;
+transition:all 0.2s ease;
+}
+.sliderLeft{
+    height: 17px;
+    width: 17px;
+    background: rgb(176, 228, 176);
+    border-radius: 8px;
+    transform: translate(26px,0px);
+    transition:all 0.2s ease;
+}
+.slideButton{
+    padding: 3px;
+    width: 55px;
+    border-radius: 13px;
+}
+
+.slideButton:hover{
+    background-color: white;
+    transition: all 0.2s ease;
+}
+#settingsImg{
+    height: 64%;
+    margin-top: 4%;
+
+}
+.popUpCont{
+    height:100%; width:100%;
+    position:absolute;
+    display:none;
+    background-color: rgba(0, 0, 0, 0.453);
+    bottom: 0;
+    right: 0;
+}
+#settingsContainer {
+    z-index: 4;
+    display:none;
+
+}
+#hidePop{
+    display: none;
+}
+.hidePop{
+        display: none;
+        height:100%; width:100%;
+        position:absolute;
+        display:none;
+        background-color: rgba(0, 0, 0, 0.253);
+        bottom: 0;
+        right: 0;
+}
+#showPop{
+    display: block;
+    bottom: 0;
+    right: 0;
+    transition: all 1s;
+    
+}
+.showPop{
+    display: block;
+    bottom: 0;
+    right: 0;
+    transition: all 1s;    height:100%; width:100%;
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.253);
+    bottom: 0;
+    right: 0;
+}
+
+.popUp{
+    border-radius: 5px;
+padding: 10px;
+height:700px; 
+width:700px; 
+background-color: #333; 
+position:absolute; 
+margin-left:30%;
+ margin-top:10%; 
+ z-index:10000;
+ color: white;
+}
+#settingsId{
+border-radius: 5px;
+padding: 10px;
+height:700px; 
+width:700px; 
+
+position:absolute; 
+margin-left:30%;
+ margin-top:10%; 
+ z-index:10000;
+}
+.settingsLi{
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-bottom:2%;
+    border-bottom-color: #d0a65a ;
+    border-bottom-style: solid;
+    height: 70px;
+    line-height: 70px;
+}
+.settingsP {
+    width: 370px
+}
+.chnDetBtn{
+    margin-left: 400px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-right: 8px;
+padding-left: 8px;
+}
+
+.channel_state{
+    width:100px;
+    text-align:center;
+    margin-left: 32px;
+}
+.channel_state p{
+    border-radius: 10px;
+    color: white;
+}
