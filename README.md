@@ -13,6 +13,8 @@ Initial password is "pass", you can change it in the file login.php, look it's a
 
 Use the config.php file to set the network on wich your lightning node is running, you can also choose which api friendlyght will'use. Rpc-api.php it's strongly recommended.
 
-Soon a mobile css style will be available. 
+Soon a mobile css style will be available.
+
+For the dynamic generation of qr-images it's included in this project phpqrcode http://phpqrcode.sourceforge.net/
 
  
